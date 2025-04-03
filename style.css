@@ -1,0 +1,28 @@
+body, html{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: url(./images/abstract-img.jpg  );
+    background-size: cover;
+}
+
+form {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0); 
+    opacity: 0.98; 
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+form h1 {
+    color: #ffffff;  
+    margin-bottom: 20px;    
+}
+
+form .form-check .form-check-label  {
+    color: #ffffff;
+}   
