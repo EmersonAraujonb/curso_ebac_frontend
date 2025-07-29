@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","C:/Users/Dev%20Emerson%20Ara%C3%BAjo/Desktop/Curso%20EBAC/exercicio-modulo-16/source/styles/variaveis.scss"],"names":[],"mappings":"AAEA;EACI,kBCHQ","sourcesContent":["@use 'variaveis';\r\n\r\nbody {\r\n    background-color: variaveis.$cor-fundo;\r\n}","$cor-fundo: #f0f0f0;"],"file":"../main.css"}

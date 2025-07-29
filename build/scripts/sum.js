@@ -1,0 +1,1 @@
+function ಠ_ಠ257(o,r){return o+r}console.log(ಠ_ಠ257(5,3)),module.ಠ_ಠ258=ಠ_ಠ257;
