@@ -1,0 +1,88 @@
+@fontePrincipal: 'Roboto', sans-serif;
+@fonteTimeDigital: 'bitcount', cursive;
+@corDoTexto: #ff9f1a;
+@corDeFundo: #3d3d3d;
+@corDeFundoDoBotao: #ffaf40;
+@corDeFundoDoBotaoHover: #ff9f1a;
+@corDeFundoDoBotaoReset: #cccccc;
+@corDeFundoDoBotaoResetHover: #dfdcdc;
+@corDaLabel: #fff;
+
+body {
+    font-family: @fontePrincipal;
+    color: @corDoTexto;
+    background-color: @corDeFundo;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-size: 30px;
+    padding-right: 20px;
+    color: @corDaLabel;
+}
+
+.timer {
+    font-size: 200px;
+    text-align: center;
+    color: @corDaLabel;
+}
+
+.input-container {
+    margin: 20px;
+
+    input {
+        font-size: 20px;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-family: @fonteTimeDigital;
+    }
+}
+
+.align-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-align: center;
+
+    img {
+        width: 30px;
+        height: 30px;
+        // margin-right: 10px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: @corDeFundoDoBotao;
+        color: @corDaLabel;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-weight: bold;
+
+        &:hover:not(:disabled) {
+            background-color: @corDeFundoDoBotaoHover;
+        }
+
+        &:disabled {
+            background-color: darken(@corDeFundoDoBotao, 20%);
+            cursor: not-allowed;
+        }
+        
+        &#resetar {
+            background-color: @corDeFundoDoBotaoReset;
+
+            &:hover:not(:disabled) {
+                background-color: @corDeFundoDoBotaoResetHover;
+            }
+        }
+    }
+}
